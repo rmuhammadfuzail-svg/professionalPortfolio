@@ -69,8 +69,6 @@
     padding: 100px 20px 40px;
   }
 }
-
-/* === LEFT: Photo col === */
 .hero-img-col {
   flex-shrink: 0;
   display: flex;
@@ -146,8 +144,6 @@
   border-right: 3px solid var(--cyan);
   border-radius: 0 0 4px 0;
 }
-
-/* CV button right below photo */
 .cv-download-btn {
   display: inline-flex;
   align-items: center;
@@ -170,8 +166,6 @@
   border-color: var(--gold);
   transform: translateY(-2px);
 }
-
-/* Typewriter name */
 .hero-typewriter {
   font-family: "Playfair Display", serif;
   font-size: 13px;
@@ -198,8 +192,6 @@
     opacity: 0;
   }
 }
-
-/* === RIGHT: Text col === */
 .hero-text-col {
   flex: 1;
   max-width: 540px;

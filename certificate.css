@@ -3,8 +3,6 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
 }
-
-/* Card */
 .cert-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -25,8 +23,6 @@
   transform: translateY(-6px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
-
-/* Image area */
 .cert-img {
   position: relative;
   height: 180px;
@@ -100,8 +96,6 @@
   color: #d47fff;
   border: 1px solid rgba(200, 100, 255, 0.3);
 }
-
-/* Body — flex grow so cards equal height */
 .cert-body {
   padding: 20px;
   display: flex;
@@ -136,8 +130,6 @@
   margin-bottom: 16px;
   flex: 1;
 }
-
-/* Action buttons — always at bottom, same size */
 .cert-actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -176,8 +168,6 @@
   background: linear-gradient(135deg, var(--gold2), var(--gold));
   transform: translateY(-1px);
 }
-
-/* Lightbox */
 .lightbox {
   position: fixed;
   inset: 0;

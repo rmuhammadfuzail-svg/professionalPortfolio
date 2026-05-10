@@ -1,217 +1,425 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Certificates — Muhammad Fuzail Raza</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <style>
-
-  </style>
-</head>
-<body>
-
-<nav id="navbar">
-  <a href="index.html" class="nav-logo">FR</a>
-  <div class="nav-links">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="education.html" class="nav-link">Education</a>
-    <a href="skills.html" class="nav-link">Skills</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="teaching.html" class="nav-link">Teaching</a>
-    <a href="certificates.html" class="nav-link active">Certificates</a>
-    <a href="cv.html" class="nav-link">CV</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </div>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" class="mobile-link">Home</a>
-  <a href="about.html" class="mobile-link">About</a>
-  <a href="education.html" class="mobile-link">Education</a>
-  <a href="skills.html" class="mobile-link">Skills</a>
-  <a href="projects.html" class="mobile-link">Projects</a>
-  <a href="teaching.html" class="mobile-link">Teaching</a>
-  <a href="certificates.html" class="mobile-link">Certificates</a>
-  <a href="cv.html" class="mobile-link">CV</a>
-  <a href="contact.html" class="mobile-link">Contact</a>
-</div>
-
-<div class="section" style="padding-top:120px;">
-  <div class="sec-head">
-    <h2>Certificates & Degrees</h2>
-    <p>Academic achievements, professional certifications, and training records</p>
-    <div class="divider"><div class="div-line l"></div><div class="div-dot"></div><div class="div-line r"></div></div>
-  </div>
-
-  <div class="cert-grid">
-
-    <!-- 1. Masters Degree -->
-    <div class="cert-card fade-up" style="transition-delay:0ms">
-      <div class="cert-img">
-        <!-- Replace: <img src="masters-degree.jpg" alt="Masters Degree"/> -->
-        <div class="cert-img-placeholder"><i class="fa-solid fa-mosque"></i><span>masters-degree.jpg</span></div>
-        <span class="cert-type-badge badge-degree">Degree</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates — Muhammad Fuzail Raza</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html" class="nav-logo">FR</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="teaching.html" class="nav-link">Teaching</a>
+        <a href="certificates.html" class="nav-link active">Certificates</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
-      <div class="cert-body">
-        <div class="cert-title">Master in Islamiyat (Dars-e-Nizami)</div>
-        <div class="cert-issuer"><i class="fa-solid fa-school"></i> Kanz-ul-Madaris Board</div>
-        <div class="cert-date"><i class="fa-regular fa-calendar"></i> Mar 2018 – Jan 2026 &nbsp;|&nbsp; Grade: A+</div>
-        <div class="cert-desc">Advanced Islamic Studies — Quran, Hadith, Fiqh, Arabic Language, Tafseer & Islamic Philosophy.</div>
-        <div class="cert-actions">
-          <button class="cert-btn cert-btn-view" onclick="openLightbox('masters-degree.pdf','Master in Islamiyat','pdf')"><i class="fa-solid fa-eye"></i> View</button>
-          <a href="masters-degree.pdf" download class="cert-btn cert-btn-dl"><i class="fa-solid fa-download"></i> Download</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="education.html" class="mobile-link">Education</a>
+      <a href="skills.html" class="mobile-link">Skills</a>
+      <a href="projects.html" class="mobile-link">Projects</a>
+      <a href="teaching.html" class="mobile-link">Teaching</a>
+      <a href="certificates.html" class="mobile-link">Certificates</a>
+      <a href="cv.html" class="mobile-link">CV</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+
+    <div class="section" style="padding-top: 120px">
+      <div class="sec-head">
+        <h2>Certificates & Degrees</h2>
+        <p>
+          Academic achievements, professional certifications, and training
+          records
+        </p>
+        <div class="divider">
+          <div class="div-line l"></div>
+          <div class="div-dot"></div>
+          <div class="div-line r"></div>
+        </div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card fade-up" style="transition-delay: 0ms">
+          <div class="cert-img">
+            <!-- Replace: <img src="masters-degree.jpg" alt="Masters Degree"/> -->
+            <div class="cert-img-placeholder">
+              <i class="fa-solid fa-mosque"></i><span>masters-degree.jpg</span>
+            </div>
+            <span class="cert-type-badge badge-degree">Degree</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Master in Islamiyat (Dars-e-Nizami)</div>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-school"></i> Kanz-ul-Madaris Board
+            </div>
+            <div class="cert-date">
+              <i class="fa-regular fa-calendar"></i> Mar 2018 – Jan 2026
+              &nbsp;|&nbsp; Grade: A+
+            </div>
+            <div class="cert-desc">
+              Advanced Islamic Studies — Quran, Hadith, Fiqh, Arabic Language,
+              Tafseer & Islamic Philosophy.
+            </div>
+            <div class="cert-actions">
+              <button
+                class="cert-btn cert-btn-view"
+                onclick="
+                  openLightbox(
+                    'masters-degree.pdf',
+                    'Master in Islamiyat',
+                    'pdf',
+                  )
+                "
+              >
+                <i class="fa-solid fa-eye"></i> View
+              </button>
+              <a href="masters-degree.pdf" download class="cert-btn cert-btn-dl"
+                ><i class="fa-solid fa-download"></i> Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Alim ki Sanad -->
+        <div class="cert-card fade-up" style="transition-delay: 80ms">
+          <div class="cert-img">
+            <!-- Replace: <img src="alim-sanad.jpg" alt="Alim Sanad"/> -->
+            <div class="cert-img-placeholder">
+              <i class="fa-solid fa-scroll"></i><span>alim-sanad.jpg</span>
+            </div>
+            <span class="cert-type-badge badge-sanad">Sanad e Alim</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">
+              Sanad e Alim (Degree of Islamic Scholar)
+            </div>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-mosque"></i> Kanz-ul-Madaris Board
+            </div>
+            <div class="cert-date">
+              <i class="fa-regular fa-calendar"></i> Jan 2026 &nbsp;|&nbsp;
+              Dars-e-Nizami
+            </div>
+            <div class="cert-desc">
+              Official Alim certification awarded upon completion of the
+              Dars-e-Nizami Islamic scholarship program.
+            </div>
+            <div class="cert-actions">
+              <button
+                class="cert-btn cert-btn-view"
+                onclick="openLightbox('alim-sanad.pdf', 'Sanad e Alim', 'pdf')"
+              >
+                <i class="fa-solid fa-eye"></i> View
+              </button>
+              <a href="alim-sanad.pdf" download class="cert-btn cert-btn-dl"
+                ><i class="fa-solid fa-download"></i> Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Bachelor Degree -->
+        <div class="cert-card fade-up" style="transition-delay: 160ms">
+          <div class="cert-img">
+            <!-- Replace: <img src="bachelor-degree.jpg" alt="Bachelor Degree"/> -->
+            <div class="cert-img-placeholder">
+              <i class="fa-solid fa-graduation-cap"></i
+              ><span>bachelor-degree.jpg</span>
+            </div>
+            <span class="cert-type-badge badge-degree">Degree</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Bachelor in Arts</div>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-university"></i> University of Sindh
+            </div>
+            <div class="cert-date">
+              <i class="fa-regular fa-calendar"></i> Aug 2019 – May 2022
+              &nbsp;|&nbsp; Grade: A
+            </div>
+            <div class="cert-desc">
+              Undergraduate degree covering liberal arts, research skills,
+              critical thinking and academic writing.
+            </div>
+            <div class="cert-actions">
+              <button
+                class="cert-btn cert-btn-view"
+                onclick="
+                  openLightbox(
+                    'bachelor-degree.pdf',
+                    'Bachelor in Arts — Sindh University',
+                    'pdf',
+                  )
+                "
+              >
+                <i class="fa-solid fa-eye"></i> View
+              </button>
+              <a
+                href="bachelor-degree.pdf"
+                download
+                class="cert-btn cert-btn-dl"
+                ><i class="fa-solid fa-download"></i> Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Saylani Certificate -->
+        <div class="cert-card fade-up" style="transition-delay: 240ms">
+          <div class="cert-img">
+            <!-- Replace: <img src="saylani-certificate.jpg" alt="Saylani Certificate"/> -->
+            <div class="cert-img-placeholder">
+              <i class="fa-solid fa-laptop-code"></i
+              ><span>saylani-certificate.jpg</span>
+            </div>
+            <span class="cert-type-badge badge-course">Course</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Web Development Certificate</div>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-building"></i> Saylani SMIT, Bahadurabad
+              Karachi
+            </div>
+            <div class="cert-date">
+              <i class="fa-regular fa-calendar"></i> Jul 2025 – Jan 2026
+              &nbsp;|&nbsp; Grade: A+
+            </div>
+            <div class="cert-desc">
+              Full-stack web development — HTML5, CSS3, JavaScript, Bootstrap,
+              Tailwind CSS, and React JS.
+            </div>
+            <div class="cert-actions">
+              <button
+                class="cert-btn cert-btn-view"
+                onclick="
+                  openLightbox(
+                    'saylani-certificate.pdf',
+                    'Web Development Certificate — Saylani SMIT',
+                    'pdf',
+                  )
+                "
+              >
+                <i class="fa-solid fa-eye"></i> View
+              </button>
+              <a
+                href="saylani-certificate.pdf"
+                download
+                class="cert-btn cert-btn-dl"
+                ><i class="fa-solid fa-download"></i> Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Hackathon Certificate -->
+        <div class="cert-card fade-up" style="transition-delay: 320ms">
+          <div class="cert-img">
+            <!-- Replace: <img src="hackathon-certificate.jpg" alt="Hackathon Certificate"/> -->
+            <div class="cert-img-placeholder">
+              <i class="fa-solid fa-trophy"></i
+              ><span>hackathon-certificate.jpg</span>
+            </div>
+            <span class="cert-type-badge badge-hackathon">Hackathon</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Hackathon Participation Certificate</div>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-code-branch"></i> [Organizer Name — Yahan
+              Bharein]
+            </div>
+            <div class="cert-date">
+              <i class="fa-regular fa-calendar"></i> [Date — Yahan Bharein]
+            </div>
+            <div class="cert-desc">
+              Participated in a competitive hackathon, building innovative web
+              solutions within a limited time with a team.
+            </div>
+            <div class="cert-actions">
+              <button
+                class="cert-btn cert-btn-view"
+                onclick="
+                  openLightbox(
+                    'hackathon-certificate.pdf',
+                    'Hackathon Certificate',
+                    'pdf',
+                  )
+                "
+              >
+                <i class="fa-solid fa-eye"></i> View
+              </button>
+              <a
+                href="hackathon-certificate.pdf"
+                download
+                class="cert-btn cert-btn-dl"
+                ><i class="fa-solid fa-download"></i> Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Internship Certificate -->
+        <div class="cert-card fade-up" style="transition-delay: 400ms">
+          <div class="cert-img">
+            <!-- Replace: <img src="internship-certificate.jpg" alt="Internship Certificate"/> -->
+            <div class="cert-img-placeholder">
+              <i class="fa-solid fa-briefcase"></i
+              ><span>internship-certificate.jpg</span>
+            </div>
+            <span class="cert-type-badge badge-intern">Internship</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Internship Certificate</div>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-building"></i> [Company Name — Yahan
+              Bharein]
+            </div>
+            <div class="cert-date">
+              <i class="fa-regular fa-calendar"></i> [Date — Yahan Bharein]
+            </div>
+            <div class="cert-desc">
+              Practical experience in real-world web development projects during
+              professional internship training.
+            </div>
+            <div class="cert-actions">
+              <button
+                class="cert-btn cert-btn-view"
+                onclick="
+                  openLightbox(
+                    'internship-certificate.pdf',
+                    'Internship Certificate',
+                    'pdf',
+                  )
+                "
+              >
+                <i class="fa-solid fa-eye"></i> View
+              </button>
+              <a
+                href="internship-certificate.pdf"
+                download
+                class="cert-btn cert-btn-dl"
+                ><i class="fa-solid fa-download"></i> Download</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 2. Alim ki Sanad -->
-    <div class="cert-card fade-up" style="transition-delay:80ms">
-      <div class="cert-img">
-        <!-- Replace: <img src="alim-sanad.jpg" alt="Alim Sanad"/> -->
-        <div class="cert-img-placeholder"><i class="fa-solid fa-scroll"></i><span>alim-sanad.jpg</span></div>
-        <span class="cert-type-badge badge-sanad">Sanad e Alim</span>
-      </div>
-      <div class="cert-body">
-        <div class="cert-title">Sanad e Alim (Degree of Islamic Scholar)</div>
-        <div class="cert-issuer"><i class="fa-solid fa-mosque"></i> Kanz-ul-Madaris Board</div>
-        <div class="cert-date"><i class="fa-regular fa-calendar"></i> Jan 2026 &nbsp;|&nbsp; Dars-e-Nizami</div>
-        <div class="cert-desc">Official Alim certification awarded upon completion of the Dars-e-Nizami Islamic scholarship program.</div>
-        <div class="cert-actions">
-          <button class="cert-btn cert-btn-view" onclick="openLightbox('alim-sanad.pdf','Sanad e Alim','pdf')"><i class="fa-solid fa-eye"></i> View</button>
-          <a href="alim-sanad.pdf" download class="cert-btn cert-btn-dl"><i class="fa-solid fa-download"></i> Download</a>
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-inner">
+        <button class="lightbox-close" onclick="closeLightbox()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="lightbox-title" id="lbTitle"></div>
+        <iframe
+          class="lightbox-pdf"
+          id="lbPdf"
+          src=""
+          style="display: none"
+        ></iframe>
+        <img
+          class="lightbox-img"
+          id="lbImg"
+          src=""
+          style="display: none"
+          alt="Certificate"
+        />
+        <div class="lightbox-actions">
+          <a id="lbDownload" href="#" download class="lb-btn lb-btn-dl"
+            ><i class="fa-solid fa-download"></i> Download</a
+          >
+          <a id="lbOpen" href="#" target="_blank" class="lb-btn lb-btn-open"
+            ><i class="fa-solid fa-arrow-up-right-from-square"></i> Open in
+            Tab</a
+          >
         </div>
       </div>
     </div>
 
-    <!-- 3. Bachelor Degree -->
-    <div class="cert-card fade-up" style="transition-delay:160ms">
-      <div class="cert-img">
-        <!-- Replace: <img src="bachelor-degree.jpg" alt="Bachelor Degree"/> -->
-        <div class="cert-img-placeholder"><i class="fa-solid fa-graduation-cap"></i><span>bachelor-degree.jpg</span></div>
-        <span class="cert-type-badge badge-degree">Degree</span>
-      </div>
-      <div class="cert-body">
-        <div class="cert-title">Bachelor in Arts</div>
-        <div class="cert-issuer"><i class="fa-solid fa-university"></i> University of Sindh</div>
-        <div class="cert-date"><i class="fa-regular fa-calendar"></i> Aug 2019 – May 2022 &nbsp;|&nbsp; Grade: A</div>
-        <div class="cert-desc">Undergraduate degree covering liberal arts, research skills, critical thinking and academic writing.</div>
-        <div class="cert-actions">
-          <button class="cert-btn cert-btn-view" onclick="openLightbox('bachelor-degree.pdf','Bachelor in Arts — Sindh University','pdf')"><i class="fa-solid fa-eye"></i> View</button>
-          <a href="bachelor-degree.pdf" download class="cert-btn cert-btn-dl"><i class="fa-solid fa-download"></i> Download</a>
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Muhammad Fuzail Raza</h3>
+          <p>Islamic Teacher &amp; Web Developer.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="about.html" class="footer-link">About</a
+          ><a href="certificates.html" class="footer-link">Certificates</a
+          ><a href="cv.html" class="footer-link">CV</a
+          ><a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:rmuhammadfuzail@gmail.com" class="footer-link"
+            >rmuhammadfuzail@gmail.com</a
+          ><a href="tel:03153338126" class="footer-link">03153338126</a>
         </div>
       </div>
-    </div>
-
-    <!-- 4. Saylani Certificate -->
-    <div class="cert-card fade-up" style="transition-delay:240ms">
-      <div class="cert-img">
-        <!-- Replace: <img src="saylani-certificate.jpg" alt="Saylani Certificate"/> -->
-        <div class="cert-img-placeholder"><i class="fa-solid fa-laptop-code"></i><span>saylani-certificate.jpg</span></div>
-        <span class="cert-type-badge badge-course">Course</span>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Muhammad Fuzail Raza.</p>
+        <p>
+          Built with
+          <i class="fa-solid fa-heart" style="color: var(--gold)"></i> &amp;
+          Faith
+        </p>
       </div>
-      <div class="cert-body">
-        <div class="cert-title">Web Development Certificate</div>
-        <div class="cert-issuer"><i class="fa-solid fa-building"></i> Saylani SMIT, Bahadurabad Karachi</div>
-        <div class="cert-date"><i class="fa-regular fa-calendar"></i> Jul 2025 – Jan 2026 &nbsp;|&nbsp; Grade: A+</div>
-        <div class="cert-desc">Full-stack web development — HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, and React JS.</div>
-        <div class="cert-actions">
-          <button class="cert-btn cert-btn-view" onclick="openLightbox('saylani-certificate.pdf','Web Development Certificate — Saylani SMIT','pdf')"><i class="fa-solid fa-eye"></i> View</button>
-          <a href="saylani-certificate.pdf" download class="cert-btn cert-btn-dl"><i class="fa-solid fa-download"></i> Download</a>
-        </div>
-      </div>
-    </div>
+    </footer>
 
-    <!-- 5. Hackathon Certificate -->
-    <div class="cert-card fade-up" style="transition-delay:320ms">
-      <div class="cert-img">
-        <!-- Replace: <img src="hackathon-certificate.jpg" alt="Hackathon Certificate"/> -->
-        <div class="cert-img-placeholder"><i class="fa-solid fa-trophy"></i><span>hackathon-certificate.jpg</span></div>
-        <span class="cert-type-badge badge-hackathon">Hackathon</span>
-      </div>
-      <div class="cert-body">
-        <div class="cert-title">Hackathon Participation Certificate</div>
-        <div class="cert-issuer"><i class="fa-solid fa-code-branch"></i> [Organizer Name — Yahan Bharein]</div>
-        <div class="cert-date"><i class="fa-regular fa-calendar"></i> [Date — Yahan Bharein]</div>
-        <div class="cert-desc">Participated in a competitive hackathon, building innovative web solutions within a limited time with a team.</div>
-        <div class="cert-actions">
-          <button class="cert-btn cert-btn-view" onclick="openLightbox('hackathon-certificate.pdf','Hackathon Certificate','pdf')"><i class="fa-solid fa-eye"></i> View</button>
-          <a href="hackathon-certificate.pdf" download class="cert-btn cert-btn-dl"><i class="fa-solid fa-download"></i> Download</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 6. Internship Certificate -->
-    <div class="cert-card fade-up" style="transition-delay:400ms">
-      <div class="cert-img">
-        <!-- Replace: <img src="internship-certificate.jpg" alt="Internship Certificate"/> -->
-        <div class="cert-img-placeholder"><i class="fa-solid fa-briefcase"></i><span>internship-certificate.jpg</span></div>
-        <span class="cert-type-badge badge-intern">Internship</span>
-      </div>
-      <div class="cert-body">
-        <div class="cert-title">Internship Certificate</div>
-        <div class="cert-issuer"><i class="fa-solid fa-building"></i> [Company Name — Yahan Bharein]</div>
-        <div class="cert-date"><i class="fa-regular fa-calendar"></i> [Date — Yahan Bharein]</div>
-        <div class="cert-desc">Practical experience in real-world web development projects during professional internship training.</div>
-        <div class="cert-actions">
-          <button class="cert-btn cert-btn-view" onclick="openLightbox('internship-certificate.pdf','Internship Certificate','pdf')"><i class="fa-solid fa-eye"></i> View</button>
-          <a href="internship-certificate.pdf" download class="cert-btn cert-btn-dl"><i class="fa-solid fa-download"></i> Download</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <div class="lightbox-inner">
-    <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
-    <div class="lightbox-title" id="lbTitle"></div>
-    <iframe class="lightbox-pdf" id="lbPdf" src="" style="display:none;"></iframe>
-    <img class="lightbox-img" id="lbImg" src="" style="display:none;" alt="Certificate"/>
-    <div class="lightbox-actions">
-      <a id="lbDownload" href="#" download class="lb-btn lb-btn-dl"><i class="fa-solid fa-download"></i> Download</a>
-      <a id="lbOpen" href="#" target="_blank" class="lb-btn lb-btn-open"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Tab</a>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand"><h3>Muhammad Fuzail Raza</h3><p>Islamic Teacher &amp; Web Developer.</p></div>
-    <div class="footer-col"><h4>Quick Links</h4><a href="about.html" class="footer-link">About</a><a href="certificates.html" class="footer-link">Certificates</a><a href="cv.html" class="footer-link">CV</a><a href="contact.html" class="footer-link">Contact</a></div>
-    <div class="footer-col"><h4>Connect</h4><a href="mailto:rmuhammadfuzail@gmail.com" class="footer-link">rmuhammadfuzail@gmail.com</a><a href="tel:03153338126" class="footer-link">03153338126</a></div>
-  </div>
-  <div class="footer-bottom"><p>&copy; 2025 Muhammad Fuzail Raza.</p><p>Built with <i class="fa-solid fa-heart" style="color:var(--gold)"></i> &amp; Faith</p></div>
-</footer>
-
-<script>
-function openLightbox(file, title, type) {
-  document.getElementById('lbTitle').textContent = title;
-  document.getElementById('lbDownload').href = file;
-  document.getElementById('lbOpen').href = file;
-  const pdf = document.getElementById('lbPdf');
-  const img = document.getElementById('lbImg');
-  if (type === 'pdf') {
-    pdf.src = file; pdf.style.display = 'block'; img.style.display = 'none'; img.src = '';
-  } else {
-    img.src = file; img.style.display = 'block'; pdf.style.display = 'none'; pdf.src = '';
-  }
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow = '';
-  document.getElementById('lbPdf').src = '';
-  document.getElementById('lbImg').src = '';
-}
-document.getElementById('lightbox').addEventListener('click', function(e){ if(e.target===this) closeLightbox(); });
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
-</script>
-<script src="main.js"></script>
-</body>
+    <script>
+      function openLightbox(file, title, type) {
+        document.getElementById("lbTitle").textContent = title;
+        document.getElementById("lbDownload").href = file;
+        document.getElementById("lbOpen").href = file;
+        const pdf = document.getElementById("lbPdf");
+        const img = document.getElementById("lbImg");
+        if (type === "pdf") {
+          pdf.src = file;
+          pdf.style.display = "block";
+          img.style.display = "none";
+          img.src = "";
+        } else {
+          img.src = file;
+          img.style.display = "block";
+          pdf.style.display = "none";
+          pdf.src = "";
+        }
+        document.getElementById("lightbox").classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeLightbox() {
+        document.getElementById("lightbox").classList.remove("open");
+        document.body.style.overflow = "";
+        document.getElementById("lbPdf").src = "";
+        document.getElementById("lbImg").src = "";
+      }
+      document
+        .getElementById("lightbox")
+        .addEventListener("click", function (e) {
+          if (e.target === this) closeLightbox();
+        });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
 </html>
