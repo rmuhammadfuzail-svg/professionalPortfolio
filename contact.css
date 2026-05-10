@@ -1,0 +1,39 @@
+    .contact-grid { display:grid; grid-template-columns:2fr 3fr; gap:44px; }
+    @media(max-width:768px){ .contact-grid{grid-template-columns:1fr;} }
+    .contact-info h3 { font-family:'Playfair Display',serif; font-size:20px; color:var(--gold); margin-bottom:18px; }
+    .contact-card { display:flex; align-items:center; gap:14px; padding:14px 16px; border-radius:12px; background:rgba(4,28,30,0.6); border:1px solid rgba(197,160,89,0.1); margin-bottom:10px; text-decoration:none; color:var(--text); transition:all 0.3s; }
+    .contact-card:hover { border-color:rgba(197,160,89,0.3); transform:translateX(4px); }
+    .contact-card-icon { font-size:18px; width:38px; text-align:center; color:var(--gold); }
+    .cc-label { font-size:10px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); }
+    .cc-val { font-size:13px; font-weight:500; margin-top:2px; }
+    .pf-form { background:var(--card); border:1px solid rgba(197,160,89,0.15); border-radius:18px; padding:32px; }
+    .pf-form h3 { font-family:'Playfair Display',serif; font-size:20px; color:var(--gold); margin-bottom:22px; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+    @media(max-width:500px){ .form-row{grid-template-columns:1fr;} }
+    .form-group { margin-bottom:14px; }
+    .form-label { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); display:block; margin-bottom:7px; }
+    .form-input, .form-textarea { width:100%; padding:11px 14px; border-radius:9px; background:rgba(255,255,255,0.04); border:1px solid rgba(197,160,89,0.12); color:var(--text); font-family:'Inter',sans-serif; font-size:14px; transition:all 0.3s; outline:none; }
+    .form-input:focus, .form-textarea:focus { border-color:rgba(197,160,89,0.4); background:rgba(197,160,89,0.04); }
+    .form-textarea { resize:none; height:130px; }
+    .form-btn { width:100%; padding:14px; border-radius:12px; background:linear-gradient(135deg, var(--gold), #a8863d); color:#030f0e; font-weight:700; font-size:15px; border:none; cursor:pointer; transition:all 0.3s; animation:glowPulse 2s ease-in-out infinite; display:flex; align-items:center; justify-content:center; gap:8px; }
+    .form-btn:hover { background:linear-gradient(135deg, var(--gold2), var(--gold)); transform:translateY(-2px); }
+    .form-btn:disabled { opacity:0.6; cursor:not-allowed; }
+    .success-msg { text-align:center; padding:18px; color:var(--cyan); font-weight:500; font-size:15px; display:none; }
+    .success-msg.show { display:block; }
+    .social-section { margin-top:28px; }
+    .social-section h4 { font-family:'Playfair Display',serif; font-size:16px; color:var(--gold); margin-bottom:14px; }
+    .social-grid { display:flex; flex-wrap:wrap; gap:10px; }
+    .soc-btn { display:flex; align-items:center; gap:8px; padding:8px 16px; border-radius:10px; text-decoration:none; font-size:13px; font-weight:500; border:1px solid; transition:all 0.3s; }
+    .soc-btn:hover { transform:translateY(-2px); }
+    .soc-github { color:#f0f0f0; border-color:rgba(240,240,240,0.2); background:rgba(240,240,240,0.05); }
+    .soc-github:hover { background:rgba(240,240,240,0.12); border-color:#f0f0f0; }
+    .soc-linkedin { color:#0a66c2; border-color:rgba(10,102,194,0.3); background:rgba(10,102,194,0.05); }
+    .soc-linkedin:hover { background:rgba(10,102,194,0.12); border-color:#0a66c2; }
+    .soc-whatsapp { color:#25d366; border-color:rgba(37,211,102,0.3); background:rgba(37,211,102,0.05); }
+    .soc-whatsapp:hover { background:rgba(37,211,102,0.12); border-color:#25d366; }
+    .soc-instagram { color:#e1306c; border-color:rgba(225,48,108,0.3); background:rgba(225,48,108,0.05); }
+    .soc-instagram:hover { background:rgba(225,48,108,0.12); border-color:#e1306c; }
+    .soc-facebook { color:#1877f2; border-color:rgba(24,119,242,0.3); background:rgba(24,119,242,0.05); }
+    .soc-facebook:hover { background:rgba(24,119,242,0.12); border-color:#1877f2; }
+    .soc-youtube { color:#ff0000; border-color:rgba(255,0,0,0.3); background:rgba(255,0,0,0.05); }
+    .soc-youtube:hover { background:rgba(255,0,0,0.12); border-color:#ff0000; }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Muhammad Fuzail Raza</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">FR</a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="education.html" class="nav-link">Education</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="teaching.html" class="nav-link">Teaching</a>
+    <a href="certificates.html" class="nav-link">Certificates</a>
+    <a href="cv.html" class="nav-link">CV</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="education.html" class="mobile-link">Education</a>
+  <a href="skills.html" class="mobile-link">Skills</a>
+  <a href="projects.html" class="mobile-link">Projects</a>
+  <a href="teaching.html" class="mobile-link">Teaching</a>
+  <a href="certificates.html" class="mobile-link">Certificates</a>
+  <a href="cv.html" class="mobile-link">CV</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+</div>
+
+<div class="section" style="padding-top:120px;">
+  <div class="sec-head">
+    <h2>Projects</h2>
+    <p>A showcase of modern web development with clean code and elegant design</p>
+    <div class="divider"><div class="div-line l"></div><div class="div-dot"></div><div class="div-line r"></div></div>
+  </div>
+  <div class="projects-grid" id="projectsGrid"></div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-img"><img id="mImg" src="" alt=""/><div class="modal-img-overlay"></div></div>
+    <div class="modal-body">
+      <h2 class="modal-title" id="mTitle"></h2>
+      <span class="modal-tech-badge" id="mTech"></span>
+      <p style="color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:16px;" id="mDesc"></p>
+      <div class="modal-grid">
+        <div class="modal-box"><div class="modal-box-title"><i class="fa-solid fa-bullseye"></i> The Problem</div><p id="mProblem"></p></div>
+        <div class="modal-box"><div class="modal-box-title"><i class="fa-solid fa-lightbulb"></i> The Solution</div><p id="mSolution"></p></div>
+      </div>
+      <div class="modal-features"><h4>Key Features</h4><div class="features-grid" id="mFeatures"></div></div>
+      <div class="modal-stack"><h4>Tech Stack</h4><div class="stack-tags" id="mStack"></div></div>
+      <div class="modal-actions">
+        <a id="mLive" href="#" target="_blank" class="modal-btn primary"><i class="fa-solid fa-play"></i> Live Preview</a>
+        <a id="mGithub" href="#" target="_blank" class="modal-btn secondary"><i class="fa-brands fa-github"></i> View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><h3>Muhammad Fuzail Raza</h3><p>Islamic Teacher &amp; Web Developer.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="about.html" class="footer-link">About</a><a href="projects.html" class="footer-link">Projects</a><a href="certificates.html" class="footer-link">Certificates</a><a href="cv.html" class="footer-link">CV</a><a href="contact.html" class="footer-link">Contact</a></div>
+    <div class="footer-col"><h4>Connect</h4><a href="mailto:rmuhammadfuzail@gmail.com" class="footer-link">rmuhammadfuzail@gmail.com</a><a href="tel:03153338126" class="footer-link">03153338126</a></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Muhammad Fuzail Raza.</p><p>Built with <i class="fa-solid fa-heart" style="color:var(--gold)"></i> &amp; Faith</p></div>
+</footer>
+
+<script>
+const projects = [
+  {id:1,title:"Villa-Agency-Website",description:"Villa Agency is a modern and fully responsive real estate website developed using HTML, CSS, and JavaScript. The project features a clean UI design, smooth layouts, attractive property cards, gradient sections, and interactive components to create a professional user experience. It includes multiple pages such as Home, Property Details, and Contact sections with a structured navigation system. The website also contains property showcases, video sections, booking buttons, Google Maps integration, and a contact form. This project demonstrates my frontend development skills, responsive web design techniques, layout structuring, and ability to build visually appealing and user-friendly websites.",tech:"HTML/CSS",tags:["HTML5","CSS3","Bootstrap"],image:"./images/banner-01.jpg",fullDescription:"Villa Agency is a modern and fully responsive real estate website developed using HTML, CSS, and JavaScript. The project features a clean UI design, smooth layouts, attractive property cards, gradient sections, and interactive components to create a professional user experience. It includes multiple pages such as Home, Property Details, and Contact sections with a structured navigation system. The website also contains property showcases, video sections, booking buttons, Google Maps integration, and a contact form. This project demonstrates my frontend development skills, responsive web design techniques, layout structuring, and ability to build visually appealing and user-friendly websites.",techStack:["HTML5","CSS3","Bootstrap"],features:["Fully Responsive Design for mobile, tablet, and desktop devices","Modern Real Estate UI with clean layouts and attractive sections","Property Cards with detailed property information and pricing","Interactive Navigation and smooth multi-page structure","Contact Form and Google Maps integration for user interaction","Professional styling using HTML, CSS, JavaScript, and Font Awesome icons"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"This website helps real estate agencies showcase properties professionally and makes it easier for customers to explore and contact agents online.",solution:"This website provides a modern and user-friendly platform for displaying property details, improving customer engagement, and simplifying online communication with agents."},
+  {id:2,title:"E-Commerce Store",description:"A full-featured online shopping platform with product catalog, shopping cart, and user authentication.",tech:"JavaScript",tags:["HTML","CSS","JS"],image:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",fullDescription:"A responsive e-commerce solution with product filtering, dynamic cart management, and smooth checkout.",techStack:["HTML5","CSS3","JavaScript","Bootstrap"],features:["Product Catalog","Shopping Cart","Authentication","Payment","Order History"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Small businesses need affordable online presence.",solution:"Created a lightweight e-commerce solution without heavy frameworks."},
+  {id:3,title:"Portfolio Website",description:"A creative portfolio with smooth animations and responsive design.",tech:"HTML/CSS",tags:["HTML","CSS","JS"],image:"https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",fullDescription:"A stunning portfolio with parallax scrolling, CSS animations, and clean layout.",techStack:["HTML5","CSS3","JavaScript"],features:["Parallax Scrolling","CSS Animations","Contact Form","Project Gallery","Responsive"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Developers need a professional presence that stands out.",solution:"Hand-crafted a unique portfolio with custom animations."},
+  {id:4,title:"Weather Application",description:"Real-time weather app with current conditions and 7-day forecasts using APIs.",tech:"JavaScript",tags:["JS","API","CSS"],image:"https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",fullDescription:"A sleek weather app with real-time data, dynamic backgrounds matching conditions.",techStack:["HTML5","CSS3","JavaScript","REST API"],features:["Real-time Weather","7-Day Forecast","Location Detection","Dynamic Backgrounds","City Search"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Users want quick reliable weather without clutter.",solution:"Built a clean weather app with intuitive UX."},
+  {id:5,title:"Task Manager App",description:"Productivity tool with drag-and-drop, categories, and deadline tracking.",tech:"React JS",tags:["React","Tailwind","JS"],image:"https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",fullDescription:"Feature-rich task management with Kanban boards, priority levels, and notifications.",techStack:["HTML5","CSS3","JavaScript","React JS","Tailwind CSS"],features:["Kanban Boards","Drag & Drop","Priority Levels","Deadline Alerts","Category Filters"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"People struggle organizing tasks.",solution:"Created an intuitive Kanban board making prioritization visual."},
+  {id:6,title:"Quiz Application",description:"Interactive quiz with timed questions, score tracking, and multiple categories.",tech:"JavaScript",tags:["HTML","CSS","JS"],image:"https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&h=400&fit=crop",fullDescription:"Engaging quiz app for education with timed assessments, leaderboards, and instant feedback.",techStack:["HTML5","CSS3","JavaScript","Bootstrap"],features:["Timed Quizzes","Score Tracking","Categories","Leaderboard","Instant Feedback"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Teachers need engaging assessment tools.",solution:"Built a gamified quiz system with instant feedback."},
+  {id:7,title:"Blog Platform",description:"Minimal blog with article management, search, and great reading experience.",tech:"React JS",tags:["React","CSS","JS"],image:"https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop",fullDescription:"Minimalist blog platform with Markdown support, categories, and elegant reading experience.",techStack:["HTML5","CSS3","JavaScript","React JS"],features:["Markdown Support","Categories","Search","Reading Time","Share Feature"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Content creators need distraction-free platforms.",solution:"Designed minimal, typography-focused blog."},
+  {id:8,title:"Calculator Pro",description:"Advanced calculator with scientific functions, history, and glassmorphism design.",tech:"JavaScript",tags:["HTML","CSS","JS"],image:"https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=600&h=400&fit=crop",fullDescription:"Sophisticated calculator with basic and scientific modes featuring glassmorphism UI.",techStack:["HTML5","CSS3","JavaScript"],features:["Scientific Mode","History","Keyboard Support","Theme Toggle","Glassmorphism UI"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Web calculators look outdated.",solution:"Created beautiful calculator with modern UI."},
+  {id:9,title:"Restaurant Website",description:"Restaurant website with menu, online reservations, and photo gallery.",tech:"HTML/CSS",tags:["HTML","CSS","Bootstrap"],image:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop",fullDescription:"Visually stunning restaurant website with interactive menu, reservations, and photo gallery.",techStack:["HTML5","CSS3","JavaScript","Bootstrap"],features:["Interactive Menu","Reservations","Photo Gallery","Reviews","Google Maps"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Restaurants need professional web presence.",solution:"Built appetizing website converting visitors into diners."},
+  {id:10,title:"Fitness Tracker",description:"Health & fitness app with workout logging, progress charts, and goal setting.",tech:"React JS",tags:["React","Tailwind","JS"],image:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",fullDescription:"Comprehensive fitness tracking with workouts, goals, and beautiful progress charts.",techStack:["HTML5","CSS3","JavaScript","React JS","Tailwind CSS"],features:["Workout Logger","Progress Charts","Daily Goals","Exercise Library","Stats Dashboard"],liveUrl:"#",githubUrl:"https://github.com/rmuhammadfuzail-svg",problem:"Fitness enthusiasts need simple tracking.",solution:"Built intuitive tracker with beautiful data visualization."},
+];
+
+const grid = document.getElementById('projectsGrid');
+projects.forEach((p,i) => {
+  const card = document.createElement('div');
+  card.className = 'proj-card';
+  card.style.transitionDelay = (i * 60) + 'ms';
+  card.dataset.id = p.id;
+  card.innerHTML = `<div class="proj-img"><img src="${p.image}" alt="${p.title}" loading="lazy"/><div class="proj-img-overlay"></div><span class="proj-tech">${p.tech}</span></div><div class="proj-body"><div class="proj-title">${p.title}</div><div class="proj-desc">${p.description}</div><div class="proj-footer"><div class="proj-tags">${p.tags.slice(0,3).map(t=>`<span class="proj-tag">${t}</span>`).join('')}</div><div class="proj-arrow"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:12px;"></i></div></div></div>`;
+  grid.appendChild(card);
+});
+
+const modal = document.getElementById('modalOverlay');
+document.getElementById('modalClose').addEventListener('click', () => { modal.classList.remove('open'); document.body.style.overflow=''; });
+modal.addEventListener('click', e => { if(e.target===modal){ modal.classList.remove('open'); document.body.style.overflow=''; } });
+document.addEventListener('keydown', e => { if(e.key==='Escape'){ modal.classList.remove('open'); document.body.style.overflow=''; } });
+grid.addEventListener('click', e => {
+  const card = e.target.closest('.proj-card');
+  if(!card) return;
+  const p = projects.find(x => x.id === parseInt(card.dataset.id));
+  if(!p) return;
+  document.getElementById('mImg').src = p.image;
+  document.getElementById('mTitle').textContent = p.title;
+  document.getElementById('mTech').textContent = p.tech;
+  document.getElementById('mDesc').textContent = p.fullDescription;
+  document.getElementById('mProblem').textContent = p.problem;
+  document.getElementById('mSolution').textContent = p.solution;
+  document.getElementById('mFeatures').innerHTML = p.features.map(f=>`<div class="feature-item"><div class="feature-dot"></div><span>${f}</span></div>`).join('');
+  document.getElementById('mStack').innerHTML = p.techStack.map(t=>`<span class="stack-tag">${t}</span>`).join('');
+  document.getElementById('mLive').href = p.liveUrl;
+  document.getElementById('mGithub').href = p.githubUrl;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+</script>
+<script src="main.js"></script>
+</body>
+</html>
